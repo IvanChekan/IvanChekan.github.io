@@ -1,0 +1,84 @@
+.contact
+	background-color: $text-light
+	padding: 60px 78px 60px 61px
+	&__title
+		font-size: 20px
+		text-transform: uppercase
+		margin-bottom: 53px
+		margin-top: 0
+		+bold
+	&s
+		background-image: url(../img/contacts/card-fon.jpg)
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		&__image
+			position: absolute
+			left: 200px
+			top: 200px
+		&-block
+			position: relative
+			display: flex
+			justify-content: flex-end
+		&-list
+			padding-left: 0
+			list-style-type: none
+			&__item
+				display: flex
+				margin-bottom: 40px
+				&:last-child
+					margin-bottom: 0
+			&__icon
+				margin-right: 8px
+			&__phone
+				display: block
+				margin-bottom: 20px
+				font-size: 14px
+				+med
+				&:last-child
+					margin-bottom: 0
+			&__addres
+				font-size: 14px
+			&__email
+				position: relative
+				display: inline-block
+				font-size: 14px
+			&__link
+				color: $text-color
+				&:before
+					content: ''
+					bottom: 0
+					left: 0
+					position: absolute
+					width: 100%
+					height: 1px
+					background-color: $text-color
+					opacity: 0.3
+
+@media (max-width:1024px)
+	.contact
+		&s
+			&__image
+				display: none
+@media (max-width:768px)
+	.contact
+		padding: 30px 25px
+		&s
+			&-block
+				justify-content: center
+@media (max-width:320px)
+	.contact
+		&__title
+			margin-bottom: 20px
+			font-size: 15px
+		&s
+			&-list
+				&__phone
+					margin-bottom: 10px
+					font-size: 11px
+				&__addres
+					font-size: 11px
+				&__email
+					font-size: 11px
+				&__item
+					margin-bottom: 30px

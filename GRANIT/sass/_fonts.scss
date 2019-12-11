@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Gotham Pro Reg';
+	src: url('../fonts/GothamProReg/GothamPro.eot');
+	src: url('../fonts/GothamProReg/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProReg/GothamPro.woff') format('woff'),
+		url('../fonts/GothamProReg/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Medium';
+	src: url('../fonts/GothamProMed/GothamPro-Medium.eot');
+	src: url('../fonts/GothamProMed/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProMed/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamProMed/GothamPro-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Bold';
+	src: url('../fonts/GothamProBold/GothamPro-Bold.eot');
+	src: url('../fonts/GothamProBold/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProBold/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamProBold/GothamPro-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin reg {
+	font-family: 'Gotham Pro Reg', sans-serif;
+	font-weight: 300
+}
+
+@mixin med {
+	font-family: 'Gotham Pro Medium', sans-serif;
+	font-weight: 600
+}
+
+@mixin bold {
+	font-family: 'Gotham Pro Bold', sans-serif;
+	font-weight: 900
+}

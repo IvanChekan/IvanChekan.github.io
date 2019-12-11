@@ -1,0 +1,64 @@
+
+.card
+	&-slider
+		position: relative
+	&-block
+		text-align: center
+		padding: 20px
+		&__img
+			display: inline-block
+			position: relative
+			margin-bottom: 22px
+		&__action
+			position: absolute
+			font-size: 10px
+			background-color: $action-color
+			color: #ffffff
+			padding: 5px 11px
+			top: 10px
+			left: 10px
+		&__title
+			font-size: 13px
+			margin-bottom: 24px
+			+reg
+		&__button
+			padding: 15px 60px
+			font-size: 12px
+			+med
+	&-price
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 25px
+		&__old
+			color: $header-color
+			font-size: 10px
+			margin-right: 15px
+		&__new
+			color: $price-color
+			+med
+.slick
+	&-active
+		outline: none
+.arrows
+	display: flex
+	justify-content: space-between
+	position: relative
+	top: -210px
+.fas
+	font-size: 30px
+	cursor: pointer
+@media (max-width:320px)
+	.card
+		&-block
+			&__img
+				margin-bottom: 15px
+			&__title
+				margin-top: 0
+				margin-bottom: 15px
+				font-size: 12px
+			&__button
+				font-size: 11px
+		&-price
+			&__new
+				font-size: 14px

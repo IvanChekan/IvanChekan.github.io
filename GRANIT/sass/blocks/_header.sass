@@ -1,0 +1,140 @@
+.header
+	padding: 33px 0 60px
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+		align-items: center
+	&__image
+		margin-right: 10px
+		width: 40px
+		height: 40px
+	&-blocks
+		display: flex
+		flex-direction: column
+		&__title
+			text-transform: uppercase
+			font-size: 20px
+			margin-bottom: 9px
+			+bold
+		&__subtitle
+			font-size: 11px
+			color: $header-color
+	&__info
+		display: flex
+	&__button
+		margin-left: 31px
+		background-color: transparent
+		border: 2px solid #292929
+		+med
+	&__phone
+		margin-bottom: 10px
+		font-size: 18px
+		+med
+	&__addres
+		font-size: 11px
+		color: $header-color
+	&__contacts
+		flex-direction: column
+		display: flex
+	&-menu
+		position: fixed
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: 1s
+		transform: translateX(-100%)
+		background-color: $main-color
+		width: 50%
+		height: 100%
+		z-index: 999
+		top: 0
+		left: 0
+		&_active
+			transform: translateX(0%)
+		&__list
+			width: 100%
+		&__nav
+			display: flex
+			justify-content: space-around
+			align-items: center
+			height: 50%
+			flex-direction: column
+		&__btn
+			display: none
+			position: absolute
+			background-color: $main-color
+			top: 5px
+			right: -35px
+			width: 40px
+			height: 40px
+		&__line
+			display: block
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 20px
+			height: 2px
+			background-color: $text-color
+			margin-left: -10px
+			&::before
+				display: block
+				transform: translateY(-5px)
+				content: ''
+				position: absolute
+				transition: 0.5s
+				top: 50%
+				left: 50%
+				width: 20px
+				height: 2px
+				background-color: $text-color
+				margin-left: -10px
+			&::after
+				display: block
+				transform: translateY(3px)
+				content: ''
+				position: absolute
+				transition: 0.5s
+				top: 50%
+				left: 50%
+				width: 20px
+				height: 2px
+				background-color: $text-color
+				margin-left: -10px
+
+@media ( max-width:768px )
+	.header
+		padding: 10px 0 15px
+		&__contacts
+			display: none
+		&-blocks
+			&__title
+				align-items: center
+				margin-bottom: 0
+			&__subtitle
+				display: none
+		&__button
+			font-size: 11px
+			margin-left: 0
+			padding: 10px 12px
+		&-menu
+			&__btn
+				display: block
+				top: 68px
+				right: -44px
+@media ( max-width:320px )
+	.header
+		&__image
+			margin-right: 5px
+			width: 35px
+			height: 35px
+		&-blocks
+			&__title
+				font-size: 16px
+		&-menu
+			&__btn
+				width: 30px
+				height: 30px
+				right: -37px

@@ -1,0 +1,51 @@
+.step
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&s
+		background-color: $section-color
+	&-block
+		flex-basis: 32%
+		text-align: center
+		border: 2px solid #ffffff
+		padding: 40px 44px
+		&:hover
+			box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05)
+			background-color: $text-light
+			transition: 0.3s
+		&__img
+			display: inline-block
+			margin-bottom: 40px
+		&__title
+			+med
+			font-size: 15px
+			margin-bottom: 20px
+		&__text
+			font-size: 13px
+@media (max-width:1024px)
+	.step
+		&-block
+			flex-basis: 49%
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
+			&__child
+				flex-basis: 100%
+			&__text
+				max-width: 350px
+				margin: auto
+@media (max-width:768px)
+	.step
+		flex-direction: column
+		&-block
+@media (max-width: 320px)
+	.step
+		&-block
+			padding: 30px
+			&__img
+				margin-bottom: 20px
+			&__title
+				margin-bottom: 10px
+				font-size: 13px
+			&__text
+				font-size: 12px
