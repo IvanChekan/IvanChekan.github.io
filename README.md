@@ -1,6 +1,6 @@
 # Чекан  Иван 
 
- [Repair](ivanchekan.github.io/repair/)
+ [Repair](https://ivanchekan.github.io/repair/)
  
  [Granit](https://ivanchekan.github.io/GRANIT/)
  
