@@ -1,0 +1,79 @@
+.slider
+	position: relative
+	top: -15px
+	padding-bottom: 10px
+	margin-bottom: 0
+	&-img
+		width: 100%
+	&-link
+		outline: none
+.main
+	&-slider
+		background-color: $slider-color
+		&__info
+			height: 121px
+		&__text
+			color: $slider-text
+			margin: 0
+			line-height: 27px
+			font-size: 35px
+			padding-top: 28px
+			font-weight: 700
+			+reg-b
+.dots
+	display: flex
+	position: absolute
+	bottom: 150px
+	right: 50%
+	margin: 0
+	list-style-type: none
+ul
+	padding: 0
+li
+	margin-right: 10px
+	&:last-child
+		margin-right: 0
+button
+	display: inline-block
+	width: 10px
+	height: 10px
+	padding: 0
+	border: none
+	border-radius: 50%
+	text-indent: -9999px
+	cursor: pointer
+li.slick-active button
+	background-color: $cube-color
+.slick
+	&-slide:active
+		outline: none
+@media screen and ( max-width:962px	)
+	.slider
+		top: 0
+@media screen and ( max-width:768px	)
+	.main
+		&-slider
+			&__info
+				height: 100px
+			&__text
+				padding-top: 15px
+				font-size: 30px
+	.dots
+		bottom: 110px
+		right: 45%
+@media screen and ( max-width:425px	)
+	.main
+		&-slider
+			&__text
+				font-size: 22px
+	.slider
+		padding-bottom: 5px
+		&-img
+			height: 130px
+	.dots
+		bottom: 105px
+	button
+		width: 7px
+		height: 7px
+	li
+		margin-right: 7px

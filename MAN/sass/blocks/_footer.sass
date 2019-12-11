@@ -1,0 +1,136 @@
+.title
+	color: $text-color
+	font-size: 15px
+	margin: 0
+	margin-bottom: 30px
+.link
+	color: $text-color
+	font-size: 14px
+	&:hover
+		color: lighten($text-color,20%)
+.item
+	display: flex
+	align-items: center
+	margin-bottom: 15px
+.footer
+	background-color: $contacts-color
+	padding-top: 40px
+	padding-bottom: 37px
+	&-top
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: stretch
+		padding-bottom: 38px
+.pick
+	margin-right: 30px
+	&-list
+		padding: 0
+	&-link
+		background-image: url('../img/section/Arrow.png')
+		background-repeat: no-repeat
+		background-position: left center
+		padding-left: 20px
+.social
+	margin-right: 30px
+	&-list
+		padding: 0
+		font-size: 14px
+	&-item
+		display: flex
+		align-items: center
+		margin-bottom: 12px
+	&-link
+		padding-left: 12px
+	&-img
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 25px
+		height: 25px
+		background-color: #c2c2c2
+		border-radius: 50%
+.company
+	&-list
+		padding: 0
+		font-size: 14px
+	&-link
+		background-image: url('../img/section/Arrow.png')
+		background-repeat: no-repeat
+		background-position: left center
+		padding-left: 20px
+.footer
+	&-down
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-description
+		font-size: 14px
+		color: $text-color
+		margin-bottom: 15px
+	&-row
+		max-width: 550px
+		display: flex
+		flex-wrap: wrap
+		&__link
+			display: inline-block
+			color: $title-header
+			font-size: 14px
+			padding-right: 6px
+			margin: 0 6px 20px 0
+			border-right: 2px solid $title-header
+			&:first-child
+				padding-left: 0
+			&:hover
+				color: darken($title-header, 20%)
+@media screen and ( max-width:992px	)
+	.footer
+		&-description
+			margin-right: 20px
+
+@media screen and ( max-width:768px	)
+	.title
+		margin-bottom: 25px
+	.footer
+		padding-bottom: 25px
+		&-top
+			flex-direction: column
+			padding-bottom: 15px
+	.pick
+		margin-bottom: 10px
+	.company
+		margin-bottom: 10px
+	.social
+		order: 3
+	.footer
+		&-description
+			display: inline-block
+			font-size: 11px
+			margin-bottom: 25px
+			+reg-b
+		&-row
+			&__link
+				font-size: 12px
+				margin-bottom: 7px
+				+reg-b
+
+@media screen and ( max-width:320px	)
+	.social
+		margin-right: 0
+		&-title
+			display: none
+		&-list
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+		&-link
+			display: none
+		&-img
+			display: flex
+			width: 31px
+			height: 31px
+	.pick
+		margin-right: 0
+	.footer
+		&-description
+			margin-right: 0

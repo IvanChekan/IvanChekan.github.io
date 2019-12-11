@@ -1,0 +1,113 @@
+.section
+	padding-bottom: 58px
+	&-title
+		text-transform: uppercase
+		font-size: 40px
+		color: $text-color
+		margin-bottom: 31px
+		+reg-b
+	&-overlay
+		padding-top: 40px
+		border-top: 4px solid $cube-color
+.card
+	border: 1px solid #d6d8db
+	border-top: none
+	height: 218px
+	height: 100%
+	&s
+		margin-right: -9px
+		margin-left: -9px
+	&-wrap
+		padding: 9px
+		flex-basis: 25%
+	&s
+		display: flex
+		flex-wrap: wrap
+	&-img
+		display: block
+		width: 100%
+	&-text
+		padding: 15px 10px 20px 14px
+		line-height: 25px
+		color: $text-color
+		&__title
+			display: inline-block
+			padding-bottom: 3px
+			font-size: 18px
+			+reg-b
+		&__link
+			display: block
+			font-size: 15px
+			color: $text-color
+			padding-left: 13px
+			background-image: url('../img/section/Arrow.png')
+			background-repeat: no-repeat
+			background-position: left center
+			&:hover
+				color: lighten($text-color,20%)
+.last
+	&-card
+		position: relative
+		background-color: $text-color
+	&-text
+		position: absolute
+		top: 0
+		left: 0
+	&-title
+		color: #ffffff
+	&-link
+		color: #ffffff
+@media screen and ( max-width:1024px	)
+	.card
+		&-wrap
+			flex-basis: 33.3333333%
+@media screen and ( max-width:768px	)
+	.section
+		padding-bottom: 20px
+		&-overlay
+			border: none
+		&-title
+			padding-bottom: 15px
+			border-bottom: 4px solid $cube-color
+	.card
+		&-text
+			padding: 15px 7px 15px 10px
+			&__title
+				font-size: 15px
+			&__link
+				font-size: 13px
+@media screen and ( max-width:622px	)
+	.card
+		&-wrap
+			flex-basis: 50%
+		&-text
+			&__title
+				font-size: 18px
+			&__link
+				font-size: 15px
+@media screen and ( max-width:474px	)
+	.card
+		&-text
+			&__title
+				font-size: 15px
+			&__link
+				font-size: 13px
+
+@media screen and ( max-width:320px	)
+	.section
+		&-title
+			font-size: 32px
+			+reg-b
+	.card
+		&s
+			justify-content: center
+		&-wrap
+			flex-basis: 95%
+			padding: 0 0 18px 0
+		&-text
+			&__title
+				font-size: 16px
+			&__link
+				font-size: 14px
+		&-img
+			height: 130px

@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'Arial Regular';
+	src: url('../fonts/Arial/ArialMT.eot');
+	src: url('../fonts/Arial/ArialMT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Arial/ArialMT.woff') format('woff'),
+		url('../fonts/Arial/ArialMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ArialNarrowRegular';
+	src: url("../fonts/ArialNarrow/ArialNarrowRegular.eot");
+	src: url("../fonts/ArialNarrow/ArialNarrowRegular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/ArialNarrow/ArialNarrowRegular.woff") format("woff"),
+		url("../fonts/ArialNarrow/ArialNarrowRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@mixin reg {
+	font-family: 'Arial Regular', ;
+	font-weight: 400, 500, 600;
+}
+
+@mixin reg-b {
+	font-family: 'Arial Regular', ;
+	font-weight: 900;
+}
+
+@mixin nar {
+	font-family: 'ArialNarrowRegular';
+	font-weight: 700px;
+}

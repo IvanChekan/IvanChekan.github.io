@@ -1,0 +1,121 @@
+.contact
+	padding-bottom: 40px
+	&-title
+		text-transform: uppercase
+		font-size: 40px
+		margin-bottom: 20px
+		margin-top: 0
+		color: $text-color
+		+reg-b
+	&-wrap
+		background-color: $contacts-color
+	&-blocks
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 30px 45px 30px 17px
+		font-size: 15px
+		color: $text-color
+.main
+	&-wrap
+		display: flex
+.first
+	&-block
+		max-width: 230px
+		line-height: 20px
+		margin-right: 20px
+		&__title
+			display: none
+			text-transform: uppercase
+			font-size: 40px
+			color: $text-color
+			+reg-b
+		&__text
+			display: block
+			margin-bottom: 12px
+			&:last-child
+				margin-bottom: 0
+		&__name
+			+reg-b
+.second
+	&-block
+		max-width: 290px
+		line-height: 20px
+		margin-right: 20px
+		&__phone
+			color: $text-color
+			display: block
+			margin-bottom: 13px
+			&:hover
+				color: lighten($text-color,10% )
+		&__email
+			display: block
+			color: $text-color
+			margin-bottom: 36px
+			margin-bottom: 30px
+			&:hover
+				color: lighten($text-color,10% )
+		&__text
+			color: $title-header
+.last
+	&-block
+		max-width: 240px
+		line-height: 20px
+		&__link
+			display: inline-block
+			position: relative
+			color: $text-color
+			font-size: 15px
+			margin-bottom: 13px
+			+reg-b
+			&:last-child
+				margin-bottom: 0
+			&:after
+				display: block
+				position: absolute
+				content: ''
+				width: 100%
+				height: 2px
+				background-color: $text-color
+@media screen and ( max-width: 952px	)
+	.first
+		&-block
+			margin-bottom: 10px
+	.second
+		&-block
+			order: 1
+@media screen and ( max-width: 768px	)
+	.contact
+		padding-bottom: 30px
+		&-title
+			display: none
+		&-blocks
+			padding: 30px 15px 20px 17px
+	.first
+		&-block
+			font-size: 14px
+			&__title
+				display: block
+				font-size: 32px
+				margin-top: 0
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 15px
+	.second
+		&-block
+			order: 1
+			font-size: 14px
+			&__email
+				margin-bottom: 15px
+			&__text
+				display: block
+				margin-bottom: 15px
+				font-size: 13px
+	.last
+		&-block
+			&__link
+				font-size: 14px
+@media screen and ( max-width: 580px	)
+	.last
+		&-block
+			order: 2

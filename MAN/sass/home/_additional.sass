@@ -1,0 +1,78 @@
+.additional
+	padding-bottom: 30px
+	&-block
+		display: flex
+		justify-content: space-between
+		padding-top: 35px
+		border-top: 4px solid $cube-color
+.document
+	background-color: $contacts-color
+	flex-basis: 60%
+	&-overlay
+		padding: 20px 15px
+	&-title
+		text-transform: uppercase
+		color: $text-color
+		font-size: 25px
+		margin-bottom: 35px
+		+reg-b
+	&-list
+		padding-left: 27px
+		&__item
+			position: relative
+			color: $text-color
+			margin-bottom: 20px
+			font-size: 15px
+			&:before
+				content: url('../img/additional/pdf-file.png')
+				left: -25px
+				top: -7px
+				position: absolute
+				background-image:
+
+.feedback
+	background-color: $contacts-color
+	flex-basis: 38%
+	align-self: flex-start
+	&-block
+		padding: 20px 15px
+	&-title
+		text-transform: uppercase
+		color: $text-color
+		font-size: 25px
+		margin-bottom: 20px
+		+reg-b
+	&-link
+		display: inline-block
+		padding: 12px 20px
+		background-color: $slider-color
+		border-radius: 5px
+		color: #ffffff
+		&:hover
+			background-color: darken($slider-color,5%)
+@media screen and ( max-width:992px	)
+	.feedback
+		&-title
+			font-size: 20px
+	.document
+		&-title
+			font-size: 20px
+@media screen and ( max-width:768px	)
+	.additional
+		padding-bottom: 30px
+		&-block
+			flex-direction: column
+			padding-top: 0
+			border: none
+	.feedback
+		width: 100%
+		&-title
+			font-size: 16px
+	.document
+		margin-bottom: 30px
+		&-title
+			font-size: 16px
+			margin-bottom: 25px
+		&-list
+			&__item
+				font-size: 14px
