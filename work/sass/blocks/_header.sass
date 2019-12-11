@@ -1,0 +1,92 @@
+.header
+	background-color: $header-color
+	color: $header-text
+	&-top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		padding: 16px 0 16px
+	&-logo
+		display: flex
+		align-items: center
+		&__image
+			margin-right: 7px
+		&__title
+			font-family: 'Chelsea Market'
+			font-weight: 400
+			margin-right: 10px
+		&__description
+			font-size: 17px
+			+light
+	&-shop
+		display: none
+		position: relative
+		cursor: pointer
+		text-transform: uppercase
+		font-weight: 600
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			bottom: 0
+			left: 0
+			height: 1px
+			background-color: $header-text
+			width: 100%
+
+	&-menu
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__image
+			display: flex
+			align-items: center
+			justify-content: center
+			box-shadow: 0 2px 3px rgba(223, 81, 40, 0.48), inset 0 1px 0 rgba(251, 94, 51, 0.568)
+			background-image: linear-gradient(to top, #e84621 0%, #fd5f37 86%, #fd5f37 100%)
+			border: 1px solid rgba(234, 71, 34, 0.52)
+			height: 33px
+			width: 33px
+		&__img
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			bottom: 15px
+			right: 12px
+			box-shadow: inset 0 1px 0 rgba(255, 158, 119, 0.54), 0 0 1px rgba(167, 45, 24, 0.68)
+			background-color: #f54819
+			background-image: linear-gradient(to top, #fc2a00 0%, #f54819 100%)
+			border-radius: 50%
+			height: 20px
+			width: 20px
+	&-list
+		display: flex
+		&__item
+			margin-right: 10px
+			+light
+		&__link
+			text-transform: uppercase
+			color: $header-text
+@media ( max-width:1024px  )
+	.header
+		&-logo
+			margin: auto
+		&-menu
+			display: none
+@media ( max-width:768px  )
+	.header
+		&-logo
+			display: flex
+			justify-content: center
+			margin: auto
+			&__description
+				display: none
+@media ( max-width:320px  )
+	.header
+		&-logo
+			&__title
+				font-size: 25px
+		&-top
+			padding: 0

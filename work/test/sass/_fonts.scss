@@ -1,0 +1,32 @@
+ @font-face {
+ 	font-family: 'Telegrafico';
+ 	src: url('../fonts/telegrafico/Telegrafico.eot');
+ 	src: url('../fonts/telegrafico/Telegrafico.eot?#iefix') format('embedded-opentype'),
+ 		url('../fonts/telegrafico/Telegrafico.woff2') format('woff2'),
+ 		url('../fonts/telegrafico/Telegrafico.woff') format('woff'),
+ 		url('../fonts/telegrafico/Telegrafico.ttf') format('truetype'),
+ 		url('../fonts/telegrafico/Telegrafico.svg#Telegrafico') format('svg');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
+
+ @font-face {
+ 	font-family: 'Terminal Dosis';
+ 	src: url('../fonts/terminalDosis/TerminalDosis-Light.eot');
+ 	src: url('../fonts/terminalDosis/TerminalDosis-Light.eot?#iefix') format('embedded-opentype'),
+ 		url('../fonts/terminalDosis/TerminalDosis-Light.woff2') format('woff2'),
+ 		url('../fonts/terminalDosis/TerminalDosis-Light.woff') format('woff'),
+ 		url('../fonts/terminalDosis/TerminalDosis-Light.ttf') format('truetype');
+ 	font-weight: 300;
+ 	font-style: normal;
+ }
+
+ @mixin term {
+ 	font-family: 'Terminal Dosis', sans-serif
+ }
+
+ @mixin light {
+ 	font-family: 'Telegrafico', sans-serif
+ }
+
+ @import url('https://fonts.googleapis.com/css?family=Chelsea+Market&display=swap')

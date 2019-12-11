@@ -1,0 +1,84 @@
+.navbar
+	background-color: $navbar-color
+	+term
+.menu
+	display: flex
+	&-image
+		position: absolute
+		left: 0px
+		top: 30px
+	&-list
+		position: relative
+		&:hover
+			background-image: linear-gradient(to top, #fbf2d3 0%, #f0e4b8 99%, #f0e4b8 100%)
+	&-link
+		display: block
+		color: $navbar-text
+		padding: 30px 19px
+		font-size: 17px
+		font-weight: 600
+		&__type
+			margin-left: 15px
+	&-block
+		display: flex
+		justify-content: center
+		align-items: center
+	&-btn
+		display: block
+		display: none
+		position: relative
+		width: 40px
+		height: 40px
+		background-color: #fff
+		box-shadow: 1px 1px 10px rgba(0,0,0,.4)
+		border-radius: 50%
+		&_active span
+			background-color: transparent
+			&:before
+				transform: rotate(135deg)
+				margin-top: 0
+			&:after
+				transform: rotate(-135deg)
+				margin-top: 0
+span,span:after, span:before
+	position: absolute
+	top: 50%
+	margin-top: -1px
+	left: 50%
+	margin-left: -10px
+	width: 20px
+	height: 2px
+	background-color: $header-color
+span:after
+	transition: all 0.3s
+	content: ''
+	margin-top: 3px
+span:before
+	transition: all 0.3s
+	content: ''
+	margin-top: -5px
+
+.submenu
+	display: none
+	position: absolute
+	background-color: $navbar-color
+	width: 100%
+	z-index: 1
+	&-link
+		margin: auto
+		display: block
+		transition: 0.3s
+		border-radius: 15px
+		font-weight: 700
+		color: $navbar-text
+		padding: 5px 12px
+		margin-bottom: 10px
+		&:hover
+			background-color: $header-color
+@media  ( max-width:1024px  )
+	.menu
+		display: none
+		&-block
+			padding: 10px
+		&-btn
+			display: block

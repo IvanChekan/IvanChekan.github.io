@@ -1,0 +1,56 @@
+*, *:before, *:after
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+body
+	font-family: sans-serif
+
+.container
+	max-width: 940px
+	margin: auto
+
+a
+	text-decoration: none
+li
+	list-style: none
+input
+	outline: none
+	height: 27px
+	padding: 0 7px
+.select
+	outline: none
+	height: 27px
+	width: 170px
+	border: 1px solid silver
+	position: relative
+	background-color: #fff
+	&:after
+		position: absolute
+		content: ''
+		right: 0
+		top: 12px
+		width: 15px
+		height: 10px
+		background: url('../img/section/arrow.png') no-repeat
+	&:hover
+		cursor: pointer
+	&_checked
+		padding: 3px 7px
+	&__dropdown
+		display: none
+		position: absolute
+		border: 1px solid silver
+		background-color: #fff
+		top: 26px
+		width: 100%
+		&_open
+			display: block
+	&__option
+		padding: 0 7px
+		height: 25px
+		&:hover
+			background-color: #f9f9f9
+
+@media screen and ( max-width:1024px  )
+	.container
+		width: 100%

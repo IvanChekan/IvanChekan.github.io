@@ -1,0 +1,69 @@
+.wrap
+	&-top
+		background-color: $header-color
+	&-bottom
+		background-color: $navbar-color
+.menu
+	&-mobile
+		display: none
+	&-mobile
+		&__active
+			display: block
+	&-top
+		padding: 10px
+		&__list
+			display: flex
+			justify-content: center
+		&__link
+			margin-right: 15px
+			color: $header-text
+	&-bottom
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		z-index: 999
+		&__list
+			position: relative
+			&:hover
+				background-image: linear-gradient(to top, #fbf2d3 0%, #f0e4b8 99%, #f0e4b8 100%)
+		&__link
+			display: block
+			padding: 15px 15px
+			color: $navbar-text
+.submenu
+	&-bottom
+		display: none
+		position: absolute
+		width: 100%
+		background-color: $navbar-color
+		z-index: 1
+		&__link
+			margin: auto
+			display: block
+			transition: 0.3s
+			border-radius: 15px
+			color: $navbar-text
+			padding: 5px 10px
+			margin-bottom: 10px
+			font-size: 14px
+			&:hover
+				background-color: $header-color
+
+@media ( max-width:768px )
+	.menu
+		&-top
+			&__list
+				flex-direction: column
+				text-align: center
+			&__link
+				display: block
+				margin-right: 0
+				margin-bottom: 10px
+				font-size: 13px
+		&-bottom
+			display: block
+			text-align: center
+			&__link
+				border-bottom: 1px solid $header-color
+				font-size: 13px
+				padding: 10px
